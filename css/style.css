@@ -13,6 +13,11 @@
 
 html, body{font-family: 'helveticaneuelight'; font-size:100%; height:100%;}
 
+/*---helper clases--*/
+.center{text-align: center;}
+.left{float:left;}
+.right{float:right;}
+
 /*--header y nav--*/
 .main-hdr{background-color:#85cfce; position:fixed; z-index:1000; width:100%; text-align: center;}
 .menu{list-style-type: none; background-color:#2b313e; margin:0; padding:1% 0;}
@@ -24,14 +29,14 @@ html, body{font-family: 'helveticaneuelight'; font-size:100%; height:100%;}
 .logo{width:8%; display: block; margin:0 auto; padding: .5% 0;}
 .logo img{width:100%; display: block;}
 
-.section{margin-top:4%; overflow: hidden; height:100%;}
+.section{margin-top:2%; overflow: hidden; height:100%;}
 .bg{background-image:url(../img/cielo.jpg); background-size: cover; background-repeat: no-repeat;}
 
 /*---inicio---*/
-.torre-eme{display: block; width:55%; position:absolute; right:15%; top: 3%;}
-.text-overlay{display: block; width:26%; position:absolute; left:18%; top:14%;}
-.overlay-txt-p{position:absolute; left:23.7%; top:24.5%; width:12%; font-size: .7em;}
-.overlay-txt-p2{position:absolute; left:23%; top:37.5%; width:12%; font-size: .7em;}
+.torre-eme{display: block; width: 58%; position:absolute; right:15%; top: 6%;}
+.text-overlay{display: block; width:26%; position:absolute; left: 15%; top: 18%;}
+.overlay-txt-p{position:absolute; left: 20%; top: 28.5%;; width:12%; font-size: .7em;}
+.overlay-txt-p2{position:absolute; left: 21%; top: 40.5%;; width:12%; font-size: .7em;}
 
 /*--mazatlan--*/
 .mazatlan{width:100%; background-image: url(../img/mazatlan-bg.jpg); background-size: 100%;  height:48%;}
@@ -43,3 +48,77 @@ html, body{font-family: 'helveticaneuelight'; font-size:100%; height:100%;}
 .ver-ubicacion{display: block; position:absolute; top:-5%; left:45%; background-color:#fff; color:#000; text-decoration: none; text-align: center; padding:.5%; font-size: .8em; font-weight: bold;}
 .map-cont{background-color:#85cfce; position: relative;}
 .mapa{display: block; width: 50%;  /*height: 45%;*/ margin:0 auto;}
+
+/*--torre eMe--*/
+.slide img{display: inline-block; vertical-align: top;}
+.left-img{width: 31.11%;}
+.middle-img{width: 37.15%;}
+.right-img{width: 31.11%;}
+
+.section {
+    position: relative;   
+}
+
+.slide {
+    float: left;
+}
+.slide, .slidesContainer {
+    display: block;
+}
+.slides {
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.slide.table {
+    display: table;
+    width: 100%;
+    
+}
+.tableCell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+
+
+.slides .tableCell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height:50%!important;
+    padding-top: 5%;
+}
+.slidesContainer {
+    float: left;
+    position: relative;
+}
+.controlArrow {
+    position: absolute;
+    top: 30%;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    margin-top: -38px;
+}
+.controlArrow.prev {
+    left: 31%;
+    width: 0;
+    border-width: 38.5px 34px 38.5px 0;
+    border-color: transparent #fff transparent transparent;
+}
+.controlArrow.next {
+    right: 31%;
+    border-width: 38.5px 0 38.5px 34px;
+    border-color: transparent transparent transparent #fff;
+}
+
+.gray-bar{background-color:#2b303e; width:100%; padding:1% 0;}
+.torre-eme-p{width:40%; margin:0 auto; color:#85cfce; font-size: .8em;}
+.torre-ubicacion-p{width:40%; margin:0 auto; color:#2b303e; font-size: .8em; padding:1% 0;}
+.torre-ubicacion-p:before{content:url(../img/arrow-dwn-white.png); margin: 0% 0 0 -5%; position: absolute;}
+.torre-ubicacion-p:after{content:url(../img/arrow-dwn-white.png); margin: -2% 0 0 5%; position: absolute;}

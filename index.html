@@ -10,27 +10,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <link rel="stylesheet" href="css/normalize.css" type="text/css" media="all">
 <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<!--<link rel="stylesheet" href="css/jquery.fullPage.css" type="text/css" media="all">-->
 <script src="js/jquery.js" type="text/javascript"></script>
 <script src="js/jquery.fullPage.js" type="text/javascript"></script>
 <script src="js/jquery.easings.min.js" type="text/javascript"></script>
 <script src="js/jquery.slimscroll.min.js" type="text/javascript"></script>
 <script src="js/scrollReveal.js" type="text/javascript"></script>
-<script src="js/general.js" type="text/javascript"></script>
+<script src="js/general.js" type="text/javascript"></script>	
 <script type="text/javascript">
-		$(document).ready(function() {
-			$('#fullpage').fullpage({
-			  //slidesColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
-			  anchors: ['inicio', 'mazatlan', 'torreeme', 'plantas', 'amenidades','contacto','lastPage'],
-			  menu: '.menu',
-			  continuousVertical: false
-			});
-			 
-			 //scroll reveal for animation
+$(document).ready(function() {			
+			//scroll reveal for animation
 			 window.scrollReveal = new scrollReveal();
-			 
-		});
-	</script>
-	
+});
+</script>	
 <title>Torre -eMe- Gran residencial</title>
 </head>
 <body>
@@ -119,7 +111,31 @@
 	</div>
 	
 	<div class="section" id="section2">
-		<h3>Torre eMe</h3>
+		<div class="slide">
+			<img src="img/slide-1.jpg" alt="" class="left-img">
+			<img src="img/slide-2.jpg" alt="" class="middle-img">
+			<img src="img/slide-3.jpg" alt="" class="right-img">
+		</div>
+		
+		<div class="slide">
+			<img src="img/slide-1.jpg" alt="" class="left-img">
+			<img src="img/slide-2.jpg" alt="" class="middle-img">
+			<img src="img/slide-3.jpg" alt="" class="right-img">
+		</div>
+		
+		<div class="slide">
+			<img src="img/slide-1.jpg" alt="" class="left-img">
+			<img src="img/slide-2.jpg" alt="" class="middle-img">
+			<img src="img/slide-3.jpg" alt="" class="right-img">
+		</div>
+		<div class="gray-bar center">
+			<p class="torre-eme-p center">Este proyecto ha sido diseñado para poseer una elevada perspectiva del mar,
+departamentos que ofrecen confort, gran estatus y una sofisticada elegancia frente al puerto. Su arquitectura también ofrece grandes espacios privados y comerciales, además de amenidades para hacer de un espacio habitacional, una experiencia de vida.</p> 
+		</div>
+		<div class="center">
+			<p class="torre-ubicacion-p">La ubicación de torre EME está justo frente a la playa, cerca de los sitios turísticos más importantes de Mazatlán, como el Centro Histórico, Paseo Olas Altas, centros comerciales, restaurantes, la zona dorada, el estadio de beisbol, entre otros.</p>
+		</div>
+		<img src="img/torre_eme_ubicacion.jpg" alt="Ubicacion" class="">
 	</div>
 	
 	<div class="section" id="section3">
