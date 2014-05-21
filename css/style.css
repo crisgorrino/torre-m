@@ -35,12 +35,13 @@
 
 
 
-html, body{font-family: 'helveticaneuelight'; font-size:100%; height:100%;}
+html, body{font-family: 'helveticaneuelight'; font-size:100%; height:100%; background-image:url(../img/cielo.jpg);}
 
 /*---helper clases--*/
 .center{text-align: center;}
 .left{float:left;}
 .right{float:right;}
+.white-bg{background-color:#fff;}
 
 /*--header y nav--*/
 .main-hdr{background-color:#85cfce; position:fixed; z-index:1000; width:100%; text-align: center;}
@@ -53,8 +54,8 @@ html, body{font-family: 'helveticaneuelight'; font-size:100%; height:100%;}
 .logo{width:8%; display: block; margin:0 auto; padding: .5% 0;}
 .logo img{width:100%; display: block;}
 
-.section{margin-top:4%; overflow: hidden; height:100%;}
-.bg{background-image:url(../img/cielo.jpg); background-size: cover; background-repeat: no-repeat;}
+.section{margin-top:4.2%; overflow: hidden; height:100%;}
+/*.bg{background-image:url(../img/cielo.jpg); background-size: cover; background-repeat: no-repeat;}*/
 
 /*---inicio---*/
 .torre-eme{display: block; width: 58%; position:absolute; right:15%; top: 0%;}
@@ -124,7 +125,22 @@ html, body{font-family: 'helveticaneuelight'; font-size:100%; height:100%;}
 
 /*--contacto--*/
 .contacto-top{background-image:url(../img/contacto-bg.jpg); background-repeat: no-repeat; background-size: cover; width: 100%; height: 63%;}
-.contacto-inner{background-color: rgba(0, 0, 0, 0.4);height: 91%;padding: 1% 0% 2% 0%; width: 45%;margin: 0 auto;text-align: center;}
+.contacto-inner{background-color: rgba(0, 0, 0, 0.4);height: 91%;padding: 1% 0% 2% 0%; width: 45%;margin: 0 auto;}
+.contacto-inner .hdr-cont{background-color:#85cfce; padding: 1.3% 0 0 0; margin: 3% 0 2% 0;}
+.contacto-inner h2{color:#fff; font-family: helveticaLTS; font-weight: normal; font-size: 1.1em; margin:0; text-align: center;}
+
+.input-cont{width:48%; padding:0 1%;}
+.input-cont label{display:block; color:#fff; font-size:.7em; font-family:helveticaLTS-cond;  margin:2% 0}
+.input-cont input[type="text"]{display: block; width:98%; margin:2% 0}
+.input-cont textarea{display: block; width:98%; height:4em; margin:2% 0}
+.input-cont input[type="submit"]{display: block; width:100%; margin:8% 0; padding:1.9% 0; border:1px solid #85cfce; background-color:#85cfce; color:#fff; font-weight: bold; font-size: .8em;}
+.full-concept{width:50%; margin: 1% 34%;}
+.full-concept a{display: inline-block; vertical-align: bottom; width:30%;}
+.full-concept a img{display: block; width:100%;}
+.telefono{color:#fff; font-size: 1.4em;}
+.rights{color:#fff; font-size: .7em; margin:0}
+
+
 .ventas{background-color:#85cfce; padding:1% 0; }
 .ventas-inner{width:30%; margin:0 auto;}
 .ventas-mod{font-size:.7em; width:45%;}
