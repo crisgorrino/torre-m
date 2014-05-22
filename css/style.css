@@ -27,8 +27,8 @@
 
 
 @font-face{
-	font-family: 'helveticaLTS';
-	src: url('fonts/HelveticaLTStd-BoldCond.otf');
+	font-family: 'helveticaLTS-obl';
+	src: url('fonts/HelveticaLTStd-CondObl.otf');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -47,7 +47,7 @@ html, body{font-family: 'helveticaneuelight'; font-size:100%; height:100%; backg
 .main-hdr{background-color:#85cfce; position:fixed; z-index:1000; width:100%; text-align: center;}
 .menu{list-style-type: none; background-color:#2b313e; margin:0; padding:1% 0;}
 .menu li{display: inline-block; }
-.menu li a{text-decoration: none; color:#85cfce; border-right:2px solid #85cfce; padding:0 10px; display: block; font-size: .9em; text-transform: uppercase; font-family: helveticaLTS;}
+.menu li a{text-decoration: none; color:#85cfce; border-right:2px solid #85cfce; padding:0 10px; display: block; font-size: .9em; text-transform: uppercase; font-family: helveticaLTS; -o-transition:color 0.30s ease-in;-webkit-transition: color 0.30s ease-in;-moz-transition: color 0.30s ease-in;transition: color 0.30s ease-in;}
 .menu li a:hover, .menu li.active a{color:#fff;}
 .menu li:last-of-type a{border-right:none;}
 
@@ -113,6 +113,51 @@ html, body{font-family: 'helveticaneuelight'; font-size:100%; height:100%; backg
 .torre-ubicacion-p:after{content:url(../img/arrow-dwn-white.png); margin: -2% 0 0 5%; position: absolute;}
 
 /*--Plantas--*/
+.plantas-top{width:100%; background-color:#fff; padding:2% 0 1% 0;}
+.plantas-top h2{margin:0; font-weight: normal; font-size:1.2em; text-transform: uppercase;}
+.plantas-top p{margin:0; font-style: italic; font-size: .9em;}
+
+.plantas-center{width:100%; background-image:url(../img/plantas-bg.jpg); background-repeat: no-repeat; background-size:cover; height:38%;}
+.plantas-center-inner{background-color: rgba(124, 193, 192, 0.8); width: 39%; padding: 1% 2% ; margin: 0 auto;height: 92%;}
+.plantas-center-inner p{border-top:1px solid #fff; border-bottom:1px solid #fff; text-align: center; padding:.5% 0; font-size: .9em; margin:0;}
+.recamara-num-btn{display:inline-block; vertical-align: top; width:22%; margin:4% 2%; opacity: 1; -o-transition: opacity 0.30s ease-in;-webkit-transition: opacity 0.30s ease-in;-moz-transition: opacity 0.30s ease-in;transition: opacity 0.30s ease-in;}
+.recamara-num-btn:hover{opacity:.5;}
+
+.recamara-num-btn img{display: block; width: 100%;}
+.descargar-pres-btn{display: inline-block; float:right; margin-top:4%;}
+
+.plantas-bottom{width:100%; background-color:#2b303e; padding:1% 0;}
+.plantas-bottom p{color:#85cfce; text-transform: uppercase; font-size: .7em; font-family: 'helveticaLTS-cond'; margin:0;}
+
+/*--plantas info--*/
+.plantas-info-container{-moz-transition-duration: .55s;
+-moz-transition-property: height;
+-moz-transition-timing-function: ease-in-out;
+-webkit-transition-duration: .55s;
+-webkit-transition-property: height;
+-webkit-transition-timing-function: ease-in-out;
+transition-duration: .55s;
+transition-property: height;
+transition-timing-function: ease-in-out;
+overflow: hidden;
+position: fixed;
+left: 0;
+top: 0;
+background: #fff;
+width: 100%;
+height: 0;
+z-index: 750;}
+
+.plantas-info-container-inner{width:40%; margin:0 auto; padding:10% 0 0 0;}
+
+.recamaras-list{list-style-type: none; border-top:1px solid #000; border-bottom:1px solid #000; padding:0; margin:0; text-align: center; padding:8px 0;}
+.recamaras-list li{display: inline-block; vertical-align: middle; padding:0 15px; border-right:1px solid #000;}
+.recamaras-list li:nth-child(3){border:none;}
+.recamaras-list li a{color:#000; text-decoration: none; font-family: helveticaLTS; text-transform: uppercase; font-size: .7em}
+.recamaras-list li a:hover{color:#85cfce;}
+
+.modelo-btn{width:6%; background-image: url(../img/modelo-bg.jpg); background-repeat: no-repeat; background-position: center center; background-size:100%; display: inline-block; vertical-align: top; text-decoration: none; color:#2b303e; font-family:helveticaLTS-cond; text-align: center; padding: 3% 0% 2% 0%; font-weight: bold;}
+
 
 /*--Amenidades--*/
 .amenidades-top{background-image: url(../img/amenidades-bg.jpg); background-repeat: no-repeat; background-size: 100%; width:100%; height:46%; }
