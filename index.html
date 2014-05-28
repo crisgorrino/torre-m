@@ -15,8 +15,9 @@
 <script src="js/jquery.fullPage.js" type="text/javascript"></script>
 <script src="js/jquery.easings.min.js" type="text/javascript"></script>
 <script src="js/jquery.slimscroll.min.js" type="text/javascript"></script>
-<script src="js/scrollReveal.js" type="text/javascript"></script>
+<script src="js/jquery.bxslider.js" type="text/javascript"></script>	
 <script src="js/general.js" type="text/javascript"></script>	
+<script src="js/scrollReveal.js" type="text/javascript"></script>
 <script type="text/javascript">
 //scroll reveal animation
 $(document).ready(function() {window.scrollReveal = new scrollReveal(); });
@@ -206,16 +207,17 @@ $(document).ready(function() {window.scrollReveal = new scrollReveal(); });
 	</div>
 </div>
  <!--detalle palntas-->
-    
-<div id="fullpage">
-	
+ 
+ <!--PAGINA--->   
+<div id="fullpage">	
+	<!--inicio-->
 	<div class="section bg" id="section0">
-		<img src="img/torre_eme.png" alt="" class="torre-eme" data-scroll-reveal="enter top">
+		<img src="img/torre_eme.png" alt="" class="torre-eme" data-scroll-reveal="enter bottom">
 		<!--set 1-->
 		<div class="over-txt1"  style="display:none;">
 			<img src="img/magnifica-1.png" alt="" class="text-overlay" data-scroll-reveal="enter left">
 			<p class="overlay-txt-p" data-scroll-reveal="enter top after 1s">
-				Grandeza estructural.<br> Imponente arquitectura<br> que consolida un<br> puerto vanguardista y<br> cosmopolita. 
+				<strong>Grandeza estructural.</strong><br> Imponente arquitectura<br> que consolida un<br> puerto vanguardista y<br> cosmopolita. 
 			</p>
 		</div>
 		<!--set 1-->
@@ -224,7 +226,7 @@ $(document).ready(function() {window.scrollReveal = new scrollReveal(); });
 		<div class="over-txt2" style="display:none;">
 			<img src="img/refrescante.png" alt="" class="text-overlay" data-scroll-reveal="enter left">
 			<p class="overlay-txt-p2" data-scroll-reveal="enter top after 1s">
-				Mezcla de<br> sensaciones.<br> Funcionalidad y<br> confort en cada<br> elemento de un<br> entorno en equilibrio.  
+				<strong>Mezcla de</strong><br> <strong>sensaciones.</strong><br> Funcionalidad y<br> confort en cada<br> elemento de un<br> entorno en equilibrio.  
 			</p>
 		</div>
 		<!--set 2-->
@@ -233,7 +235,7 @@ $(document).ready(function() {window.scrollReveal = new scrollReveal(); });
 		<div class="over-txt3" style="display:none;">
 			<img src="img/magnifica-1.png" alt="" class="text-overlay" data-scroll-reveal="enter left">
 			<p class="overlay-txt-p" data-scroll-reveal="enter top after 1s">
-				Pnomreza estructural.<br> Imponente arquitectura<br> que consolida un<br> puerto vanguardista y<br> cosmopolita. 
+				<strong>Pnomreza estructural.</strong><br> Imponente arquitectura<br> que consolida un<br> puerto vanguardista y<br> cosmopolita. 
 			</p>
 		</div>
 		<!--set 3-->
@@ -242,7 +244,7 @@ $(document).ready(function() {window.scrollReveal = new scrollReveal(); });
 		<div class="over-txt4" style="display:none;">
 			<img src="img/refrescante.png" alt="" class="text-overlay" data-scroll-reveal="enter left">
 			<p class="overlay-txt-p2" data-scroll-reveal="enter top after 1s">
-				Mezcla de<br> sensaciones.<br> Funcionalidad y<br> confort en cada<br> elemento de un<br> entorno en equilibrio.  
+				<strong>Mezcla de</strong><br> <strong>sensaciones.</strong><br> Funcionalidad y<br> confort en cada<br> elemento de un<br> entorno en equilibrio.  
 			</p>
 		</div>
 		<!--set 4-->
@@ -251,12 +253,16 @@ $(document).ready(function() {window.scrollReveal = new scrollReveal(); });
 		<div class="over-txt5" style="display:none;">
 			<img src="img/magnifica-1.png" alt="" class="text-overlay" data-scroll-reveal="enter left">
 			<p class="overlay-txt-p" data-scroll-reveal="enter top after 1s">
-				Gnomreza estructural.<br> Imponente arquitectura<br> que consolida un<br> puerto vanguardista y<br> cosmopolita. 
+				<strong>Gnomreza estructural.</strong><br> Imponente arquitectura<br> que consolida un<br> puerto vanguardista y<br> cosmopolita. 
 			</p>
 		</div>
 		<!--set 5-->
-
+		<footer class="center">
+			<p>Torre eme es un desarollo de Full Concept. Copyright Astronauta® 2014.</p>
+				<p><a href="">info@torreeme.mx</a></p>
+		</footer>
 	</div>
+	<!--inicio-->
 	<!--Mazatlan-->
 	<div class="section" id="section1">
 		<div class="mazatlan">
@@ -328,6 +334,28 @@ departamentos que ofrecen confort, gran estatus y una sofisticada elegancia fren
 				en 2 torres de 15 pisos, en los cuales se ubican tambi&eacute;n tres<br>
 				penthouses y cuatro junior penthouses.
 			</p>
+		</div>
+		
+		<div class="pager-cont">	
+			<div class="bx-pager center">
+			  <a data-slide-index="0" href="">Estacionamiento</a>
+			  <a data-slide-index="1" href="">Area Comercial</a>
+			  <a data-slide-index="2" href="">Piso 01</a>
+			  <a data-slide-index="3" href="">Piso 03</a>
+			  <a data-slide-index="4" href="">Piso 04</a>
+			  <a data-slide-index="5" href="">Penthouse jr</a>
+			  <a data-slide-index="6" href="">Penthouse</a>
+			</div>
+			
+			<ul class="bxslider">
+				<li><img src="img/estacionamiento.jpg" alt=""></li>
+				<li><img src="img/area-comercial.jpg" alt=""></li>
+				<li><img src="img/piso-1.jpg" alt=""></li>
+				<li><img src="img/piso-3.jpg" alt=""></li>
+				<li><img src="img/piso-4.jpg" alt=""></li>
+				<li><img src="img/penthouse-jr.jpg" alt=""></li>
+				<li><img src="img/penthouse.jpg" alt=""></li>
+			</ul>
 		</div>
 	</div>
 	<!--Plantas-->
@@ -409,7 +437,7 @@ departamentos que ofrecen confort, gran estatus y una sofisticada elegancia fren
 	</div>
 	<!--Contacto-->
 	<!--360-->
-	<div class="section" id="section6">
+	<div class="section bg" id="section6">
 		<embed src="torre-eMe-360.swf" class="video-flash">
 		<div class="aqua-bar"></div>
 			

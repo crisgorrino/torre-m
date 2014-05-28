@@ -35,7 +35,7 @@
 
 
 
-html, body{font-family: 'helveticaneuelight'; font-size:100%; height:100%; background-image:url(../img/cielo.jpg); background-size: cover;}
+html, body{font-family: 'helveticaneuelight'; font-size:100%; height:100%; /*background-image:url(../img/cielo.jpg); background-size: cover;*/}
 
 /*---helper clases--*/
 .center{text-align: center;}
@@ -55,25 +55,31 @@ html, body{font-family: 'helveticaneuelight'; font-size:100%; height:100%; backg
 .logo{width:8%; display: block; margin:0 auto; padding: .5% 0;}
 .logo img{width:100%; display: block;}
 
-.section{margin-top:4.2%; overflow: hidden; height:100%;}
-/*.bg{background-image:url(../img/cielo.jpg); background-size: cover; background-repeat: no-repeat;}*/
+.section{/*margin-top:4.2%;*/ overflow: hidden; height:auto!important;}
+.bg{background-image:url(../img/cielo.jpg); background-size: cover; background-repeat: no-repeat; position:relative;}
 
 /*---inicio---*/
-.torre-eme{display: block; width: 58%; position:absolute; right:15%; top: 0%;}
+#section0{height:100%!important; margin-top:7%;}
+.torre-eme{display: block; width: 58%; position:relative; left:27%; top: 0%;}
 .text-overlay{display: block; width:26%; position:absolute; left: 15%; top: 12%;}
 .overlay-txt-p{position:absolute; left: 20%; top: 22.5%;; width:12%; font-size: .7em;}
 .overlay-txt-p2{position:absolute; left: 21%; top: 34.5%;; width:12%; font-size: .7em;}
+footer{background-color:#2b313e; padding:1% 0 3% 0;}
+footer p{margin:0; color:#85cfce;}
+footer a{text-decoration: none; color:#85cfce;}
+
+
 
 /*--mazatlan--*/
-.mazatlan{width:100%; background-image: url(../img/mazatlan-bg.jpg); background-size: 100%;  height:48%;}
-.maz-content{background-color: rgba(0, 0, 0, 0.4); height:90%;  padding: 1% 5% 2% 5%; width:25%; margin:0 auto; text-align: center;}
+.mazatlan{width:100%; background-image: url(../img/mazatlan-bg.jpg); background-size:cover;  height:48%;}
+.maz-content{background-color: rgba(0, 0, 0, 0.4); height:90%;  padding: 6% 5% 6% 5%; width: 33%; margin:0 auto; text-align: center;}
 .maz-content h1{color:#85cfce; margin:0; font-size: 1.5em;}
 .maz-content p{color:#fff; font-size: .7em; line-height: 1.2em; margin-bottom: 0;}
 .maz-bar{display: block; margin:6% auto; }
 .maz-flecha{display: block;margin: -3% auto 0 auto;width: 8%;}
 .ver-ubicacion{display: block; position:absolute; top:-5%; left:45%; background-color:#fff; color:#000; text-decoration: none; text-align: center; padding:.5%; font-size: .8em; font-weight: bold;}
 .map-cont{background-color:#85cfce; position: relative;}
-.mapa{display: block; width: 50%;  /*height: 45%;*/ margin:0 auto;}
+.mapa{display: block; width: 75%; /*height: 45%;*/ margin:0 auto;}
 
 /*--torre eMe--*/
 .slide img{display: inline-block; vertical-align: top;}
@@ -86,8 +92,8 @@ html, body{font-family: 'helveticaneuelight'; font-size:100%; height:100%; backg
 .slide, .slidesContainer {display: block;}
 .slides {overflow: hidden;position: relative;-webkit-transition: all 0.3s ease-out;-moz-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out;transition: all 0.3s ease-out;}
 .slide.table {display: table; width: 100%;}
-.tableCell {/*display: table-cell;*/ vertical-align: middle;width: 100%;}
-.slides .tableCell {display: table-cell;vertical-align: middle;width: 100%;height:50%!important;padding-top: 1%;}
+.tableCell {/*display: table-cell;*/ vertical-align: middle;width: 100%; height:auto!important;}
+.slides .tableCell {display: table-cell;vertical-align: middle;width: 100%;height:50%!important;padding-top:0;}
 .slidesContainer {float: left;position: relative;}
 .controlArrow {position: absolute;top: 24%;cursor: pointer;width: 0;height: 0;margin-top: -38px;}
 .controlArrow.prev {
@@ -166,16 +172,27 @@ z-index: 750;}
 .plano-planta{width:49%; float:right; margin-top:4%;}
 .plano-planta img{width:100%;}
 
+.pager-cont{width:50%; margin:2% auto; position: relative;}
+.bx-pager a{text-decoration: none;font-family: helveticaLTS;text-transform: uppercase;font-size: .7em; color:#000; padding:0 8px;
+display: inline-block;vertical-align: middle; border-right:1px solid #000;}
+.bx-pager a:last-of-type{border:none;}
+.bx-pager a.active{color:#85cfce;}
+.bxslider img{display:block;  margin:0 auto;}
+.bx-controls{position: absolute; top: 42px; z-index: 12; width: 100%}
+.bx-controls a{position:absolute;}
+.bx-prev{left:50px;}
+.bx-next{right:50px;}
 /*--Amenidades--*/
-.amenidades-top{background-image: url(../img/amenidades-bg.jpg); background-repeat: no-repeat; background-size: 100%; width:100%; height:46%; }
-.amenidades-inner{background-color: rgba(148, 222, 219, 0.4); width: 18%; padding: 2% 12% 0; margin:0 auto; height:92%;}
-.amenidades-bot{display: block; width:100%;}
+.amenidades-top{background-image: url(../img/amenidades-bg.jpg); background-repeat: no-repeat; background-size: cover; width:100%; height:46%; }
+.amenidades-inner{background-color: rgba(148, 222, 219, 0.4); width: 18%; padding: 3% 12% ; margin:0 auto; height:92%;}
+.amenidades-bot{display: block; width:100%; margin-bottom:15%;}
 .amenidades-inner h2{text-align: center; color:#2b313e; font-size: 1.3em;}
 .amenidades-inner p{color:#fff; font-size: .7em; font-family:helveticaLTS-cond;}
 .amenidades-inner ul{list-style-type: none; color:#fff; padding: 0 0 0 5%;}
 .white-bar{display: block; margin:2% auto; }
 
 /*--contacto--*/
+.contact-form{padding: 0 3%;}
 .contacto-top{background-image:url(../img/contacto-bg.jpg); background-repeat: no-repeat; background-size: cover; width: 100%; height: 63%;}
 .contacto-inner{background-color: rgba(0, 0, 0, 0.4);height: 91%;padding: 1% 0% 2% 0%; width: 45%;margin: 0 auto;}
 .contacto-inner .hdr-cont{background-color:#85cfce; padding: 1.3% 0 0 0; margin: 3% 0 2% 0;}
@@ -186,7 +203,7 @@ z-index: 750;}
 .input-cont input[type="text"]{display: block; width:98%; margin:2% 0}
 .input-cont textarea{display: block; width:98%; height:4em; margin:2% 0}
 .input-cont input[type="submit"]{display: block; width:100%; margin:8% 0; padding:1.9% 0; border:1px solid #85cfce; background-color:#85cfce; color:#fff; font-weight: bold; font-size: .8em;}
-.full-concept{width:50%; margin: 1% 34%;}
+.full-concept{width:50%; margin: 5% 34%;}
 .full-concept a{display: inline-block; vertical-align: bottom; width:30%;}
 .full-concept a img{display: block; width:100%;}
 .telefono{color:#fff; font-size: 1.4em;}
@@ -199,5 +216,5 @@ z-index: 750;}
 .ventas-mod:nth-child(1){border-right: 1px solid #000; padding:0 4% 0 0}
 
 /*--360---*/
-.video-flash{width:100%; height:65%; display:block;}
-.aqua-bar{background-color:#85cfce; width:100%; height:5%;}
+.video-flash{width:100%; height:500px; display:block;}
+.aqua-bar{background-color:#85cfce; width:100%; padding:2% 0; margin-bottom:10%;}

@@ -27,7 +27,7 @@
 			'loopBottom': false,
 			'loopTop': false,
 			'loopHorizontal': true,
-			'autoScrolling': true,
+			'autoScrolling': false,
 			'scrollOverflow': false,
 			'css3': false,
 			'paddingTop': 0,
@@ -1221,7 +1221,7 @@
 					
 
 					element.find('.scrollable').slimScroll({
-						height: scrollHeight + 'px',
+						//height: scrollHeight + 'px',
 						size: '10px',
 						alwaysVisible: true
 					});

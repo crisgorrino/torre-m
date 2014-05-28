@@ -8,11 +8,7 @@ $(document).ready(function() {
 			  menu: '.menu',
 			  continuousVertical: false,
 			  controlArrowColor:'#85cfce'
-			  
-			  // afterRender: function(){
-				  // alert("The resulting DOM stucture is ready");
-            	//}
-			  
+			 
 			});			
 			
 			 //random text display
@@ -29,6 +25,11 @@ $(document).ready(function() {
 			 	 e.preventDefault();
 				 $('.plantas-info-container').css('height','0').removeClass('active');
 			 })
+			 
+			 
+			 $('.bxslider').bxSlider({
+				 pagerCustom: '.bx-pager'
+				 });
 			 
 });
 
