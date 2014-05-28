@@ -172,8 +172,12 @@ z-index: 750;}
 .plano-planta{width:49%; float:right; margin-top:4%;}
 .plano-planta img{width:100%;}
 
-.pager-cont{width:50%; margin:2% auto; position: relative;}
-.bx-pager a{text-decoration: none;font-family: helveticaLTS;text-transform: uppercase;font-size: .8em; color:#000; padding:0 8px;
+.inner-white{width:100%; background-color:#fff; margin-bottom: 5%;}
+.pager-cont{width:50%; margin:0% auto 2%; position: relative;}
+.pager-cont h2{width: 162px ;margin: 0 auto 10px auto; background-color: #85cfce;text-align: center;padding: 5px;font-size:.8em; }
+.bx-wrapper .bx-viewport{height:auto!important;}
+
+.bx-pager a{text-decoration: none;font-family: helveticaLTS;text-transform: uppercase;font-size: .7em; color:#000; padding:0 8px;
 display: inline-block;vertical-align: middle; border-right:1px solid #000;}
 .bx-pager a:last-of-type{border:none;}
 .bx-pager a.active{color:#85cfce;}
@@ -182,6 +186,8 @@ display: inline-block;vertical-align: middle; border-right:1px solid #000;}
 .bx-controls a{position:absolute;}
 .bx-prev{left:2%;}
 .bx-next{right:2%;}
+
+
 /*--Amenidades--*/
 .amenidades-top{background-image: url(../img/amenidades-bg.jpg); background-repeat: no-repeat; background-size: cover; width:100%; height:46%; }
 .amenidades-inner{background-color: rgba(148, 222, 219, 0.4); width: 18%; padding: 3% 12% ; margin:0 auto; height:92%;}
