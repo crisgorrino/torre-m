@@ -61,7 +61,7 @@ html, body{font-family: 'helveticaneuelight'; font-size:100%; height:100%; /*bac
 /*---inicio---*/
 #section0{height:100%!important; margin-top:7%;}
 .torre-eme{display: block; width: 58%; position:relative; left:27%; top: 0%;}
-.text-overlay{display: block; width:26%; position:absolute; left: 15%; top: 12%;}
+.text-overlay{display: block; width:26%; position:absolute; left: 15%; top: 12%; font-family: helvetica, Arial, sans-serif; font-weight:bolder; font-size: 7.9em; margin:0; line-height: .8em; color:#85cfce; letter-spacing: -9px;}
 .overlay-txt-p{position:absolute; left: 20%; top: 22.5%;; width:12%; font-size: .7em;}
 .overlay-txt-p2{position:absolute; left: 21%; top: 34.5%;; width:12%; font-size: .7em;}
 footer{background-color:#2b313e; padding:1% 0 3% 0;}
