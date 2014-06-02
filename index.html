@@ -288,26 +288,26 @@ $(document).ready(function() {window.scrollReveal = new scrollReveal(); });
 					<div class="hdr-cont">
 						<h2>CONTACTO</h2>
 					</div>	
-					<form class="contact-form cf" method="post" action="send_mail.php">
+					<form class="contact-form cf" method="post" action="send_mail.php" id="frm-contacto">
 						<div class="input-cont left">
 							<label>NOMBRE:</label>
-							<input type="text" name="nombre">
+							<input type="text" name="nombre" class="validate[required]">
 							<label>APELLIDOS:</label>
-							<input type="text" name="apellidos">
+							<input type="text" name="apellidos" class="validate[required]">
 							<label>TEL&Eacute;FONO:</label>
 							<input type="text" name="telefono">
 							<label>CELULAR:</label>
 							<input type="text" name="celular">
 							<label>E-MAIL:</label>
-							<input type="text" name="email">
+							<input type="text" name="email" class="validate[required, custom[email]]">
 						</div>
 						<div class="input-cont right">
 							<label>CIUDAD:</label>
-							<input type="text" name="ciudad">
+							<input type="text" name="ciudad" class="validate[required]">
 							<label>PAIS:</label>
-							<input type="text" name="pais">
+							<input type="text" name="pais" class="validate[required]">
 							<label>COMENTARIO:</label>
-							<textarea name="comentario"></textarea>
+							<textarea name="comentario" class="validate[required]"></textarea>
 							<input type="submit" value="ENVIAR">
 						</div>					
 					</form>
@@ -350,4 +350,11 @@ $(document).ready(function() {window.scrollReveal = new scrollReveal(); });
 		</div>
 
 	</body>
+	<!-- JQuery Validation Engine -->
+	<script type="text/javascript" src="js/jquery-validation/js/jquery.validationEngine.js"></script>
+	<script type="text/javascript" src="js/jquery-validation/js/languages/jquery.validationEngine-es.js"></script>
+	<link rel="stylesheet" type="text/css" href="js/jquery-validation/css/validationEngine.jquery.css">
+	<script type="text/javascript">
+	$('#frm-contacto').validationEngine();
+	</script>
 	</html> 
