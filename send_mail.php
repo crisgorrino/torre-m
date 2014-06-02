@@ -31,11 +31,6 @@
 <?php $content = ob_get_clean() ?>
 
 <?php 
-	echo $_SERVER['SERVER_NAME'];
-	echo $_SERVER['PHP_SELF'];
- ?>
-
-<?php 
 require 'PHPMailer/PHPMailerAutoload.php';
 $mail = new PHPMailer();
 $mail->IsSMTP();
@@ -47,7 +42,7 @@ $mail->Username = "f.portela@bitweb.mx";
 $mail->Password = "bitwebfpv378";
 
 $mail->From = 'f.portela@bitweb.mx';
-$mail->FromName = 'Flavio';
+$mail->FromName = 'Torre-m';
 $mail->addAddress($_POST['email'], $_POST['nombre']);     // Add a recipient
 //$mail->addReplyTo('info@example.com', 'Information');
 //$mail->addCC('cc@example.com');
