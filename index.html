@@ -1,193 +1,72 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
-<meta name="description" content="">
-<meta name="keywords" content="">
-<meta name="author" content="">
-<link rel="icon" href="favicon.ico" type="image/x-icon">
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<link rel="stylesheet" href="css/normalize.css" type="text/css" media="all">
-<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
-<link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css" media="all">
-<!--<link rel="stylesheet" href="css/jquery.fullPage.css" type="text/css" media="all">-->
-<script src="js/jquery.js" type="text/javascript"></script>
-<script src="js/jquery.fullPage.js" type="text/javascript"></script>
-<script src="js/jquery.easings.min.js" type="text/javascript"></script>
-<script src="js/jquery.slimscroll.min.js" type="text/javascript"></script>
-<script src="js/jquery.bxslider.js" type="text/javascript"></script>	
-<script src="js/general.js" type="text/javascript"></script>	
-<script src="js/scrollReveal.js" type="text/javascript"></script>
-<script type="text/javascript">
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="css/normalize.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/jquery.bxslider.css" type="text/css" media="all">
+	<!--<link rel="stylesheet" href="css/jquery.fullPage.css" type="text/css" media="all">-->
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<script src="js/jquery.fullPage.js" type="text/javascript"></script>
+	<script src="js/jquery.easings.min.js" type="text/javascript"></script>
+	<script src="js/jquery.slimscroll.min.js" type="text/javascript"></script>
+	<script src="js/jquery.bxslider.js" type="text/javascript"></script>	
+	<script src="js/general.js" type="text/javascript"></script>	
+	<script src="js/scrollReveal.js" type="text/javascript"></script>
+	<script type="text/javascript">
 //scroll reveal animation
 $(document).ready(function() {window.scrollReveal = new scrollReveal(); });
 </script>	
+<script type="text/javascript" src="js/angularjs/angular.min.js"></script>
+<script type="text/javascript" src="js/angularjs/recamaras_controller.js"></script>
 <title>Torre -eMe- Gran residencial</title>
 </head>
-<body>
+<body ng-app="HomeApp" ng-controller="RecamarasCtrl">
 
-<header class="main-hdr">
-	<a href="#inicio" data-menuanchor="inicio" class="logo"><img src="img/torre_eme_logo.png" alt=""></a>
-	<ul class="menu">
-		<li data-menuanchor="inicio" class="active"><a href="#inicio">Inicio</a></li>
-		<li data-menuanchor="mazatlan"><a href="#mazatlan">Mazatl&aacute;n</a></li>
-		<li data-menuanchor="torreeme"><a href="#torreeme">Torre eMe</a></li>
-		<li data-menuanchor="plantas"><a href="#plantas">Plantas</a></li>
-		<li data-menuanchor="amenidades"><a href="#amenidades">Amenidades</a></li>
-		<li data-menuanchor="contacto"><a href="#contacto">Contacto</a></li>
-		<li data-menuanchor="lastPage"><a href="#lastPage">360<sup><small>O</small></sup></a></li>
-	</ul>
-</header>
-
-<!--detalle palntas-->
-<div class="plantas-info-container">
-	<div class="plantas-info-container-inner cf">
-	<!--lista de recamaras-->
-		<ul class="recamaras-list">
-			<li><a href="">1 rec&aacute;mara</a></li>
-			<li><a href="">2 rec&aacute;maras</a></li>
-			<li><a href="">3 rec&aacute;maras</a></li>
+	<header class="main-hdr">
+		<a href="#inicio" data-menuanchor="inicio" class="logo"><img src="img/torre_eme_logo.png" alt=""></a>
+		<ul class="menu">
+			<li data-menuanchor="inicio" class="active"><a href="#inicio">Inicio</a></li>
+			<li data-menuanchor="mazatlan"><a href="#mazatlan">Mazatl&aacute;n</a></li>
+			<li data-menuanchor="torreeme"><a href="#torreeme">Torre eMe</a></li>
+			<li data-menuanchor="plantas"><a href="#plantas">Plantas</a></li>
+			<li data-menuanchor="amenidades"><a href="#amenidades">Amenidades</a></li>
+			<li data-menuanchor="contacto"><a href="#contacto">Contacto</a></li>
+			<li data-menuanchor="lastPage"><a href="#lastPage">360<sup><small>O</small></sup></a></li>
 		</ul>
-		<!--lista de recamaras-->
-		
-		<!--modelos 1 recamara-->
-		<div class="center" style="display:none;">
-			<a href="#" class="modelo-btn">A</a>
-			<a href="#" class="modelo-btn">B</a>
-			<a href="#" class="modelo-btn">D</a>
-		</div>
-		<!--modelos 1 recamara-->
-		
-		<!--modelos 2 recamaras-->
-		<div class="center" style="display:none;">
-			<a href="#" class="modelo-btn">C</a>
-			<a href="#" class="modelo-btn">E</a>
-			<a href="#" class="modelo-btn">F</a>
-			<a href="#" class="modelo-btn">G</a>
-			<a href="#" class="modelo-btn">H</a>
-			<a href="#" class="modelo-btn">I</a>
-			<a href="#" class="modelo-btn">I2</a>
-			<a href="#" class="modelo-btn">J</a>
-			<a href="#" class="modelo-btn">K</a>
-		</div>
-		<!--modelos 2 recamaras-->
-		
-		<!--modelos 3 recamaras-->
-		<div class="center">
-			<a href="#" class="modelo-btn">L</a>
-			<a href="#" class="modelo-btn">M</a>
-			<a href="#" class="modelo-btn">N</a>
-			<a href="#" class="modelo-btn">O</a>
-			<a href="#" class="modelo-btn">P</a>
-		</div>
-		<!--modelos 3 recamaras-->
+	</header>
 
+	<!--detalle palntas-->
+	<div class="plantas-info-container">
+		<div class="plantas-info-container-inner cf">
 
-		<!---UNA RECAMARA--->		
+			<!--lista de recamaras-->
+			<ul class="recamaras-list">
+				<li ng-repeat="(key, value) in recamaras" ng-click="showInfo(value)"><a><% value.recamaras %> rec&aacute;mara<% value.recamaras > 1 ? 's' : '' %></a></li>
+			</ul>
+			<!--lista de recamaras-->
+
+			<!--modelos recamaras-->
+			<div class="center">
+				<a href="#" class="modelo-btn" ng-repeat="(key, value) in tipos" ng-click="showModelInfo(value)"><% value.modelo %></a>
+			</div>
+			<!--modelos recamaras-->
 		
-		<!--tipo a-->
-		<div class="tipo-planta-cont" style="display:none;">
-			<div class="planta-tipo-detalle">
-				<h2>TIPO A</h2>
-				<p>1 recámara, sala, comedor, cocina, 1 baño completo, 1 centro de lavado y terraza.</p>
-	
-				<p>79 m2</p>
-				<a href=""><img src="img/descargar-ficha-btn.png" alt="descargar ficha tecnica"></a>
-			</div>
-			<div class="plano-planta">
-				<img src="img/tipo-a.jpg" alt="1 recamara tipo A">
-			</div>
-			<div class="planta-detalle-paginacion cf">
-				<div class="left">
-					<a href=""><img src="img/prev-tipo-btn.jpg" alt="<"></a>
-					<a href=""><img src="img/sig-tipo-btn.jpg" alt=">"></a>
-				</div>
-				<a href="#" class="cerrar-planta-container right"><img src="img/plantas-cerrar-detalle.jpg" alt="X"></a>
-			</div>
-		</div>
-		<!--tipo a-->
 		
-		<!--tipo b-->
-		<div class="tipo-planta-cont" style="display:none;">
-			<div class="planta-tipo-detalle">
-				<h2>TIPO B</h2>
-				<p>1 recámara, sala, comedor, cocina, 1 baño completo, 1 centro de lavado, 1 bodega y terraza.</p>
-	
-				<p>82 m2</p>
-				<a href=""><img src="img/descargar-ficha-btn.png" alt="descargar ficha tecnica"></a>
-			</div>
-			<div class="plano-planta">
-				<img src="img/tipo-b.jpg" alt="1 recamara tipo B">
-			</div>
-			<div class="planta-detalle-paginacion cf">
-				<div class="left">
-					<a href=""><img src="img/prev-tipo-btn.jpg" alt="<"></a>
-					<a href=""><img src="img/sig-tipo-btn.jpg" alt=">"></a>
-				</div>
-				<a href="#" class="cerrar-planta-container right"><img src="img/plantas-cerrar-detalle.jpg" alt="X"></a>
-			</div>
-		</div>
-		<!--tipo b-->
 		
-		<!--tipo d-->
-		<div class="tipo-planta-cont" style="display:none;">
-			<div class="planta-tipo-detalle">
-				<h2>TIPO D</h2>
-				<p>1 recámara, sala, comedor, cocina, 1 baño completo, 1 centro de lavado y terraza.</p>
-	
-				<p>83 m2</p>
-				<a href=""><img src="img/descargar-ficha-btn.png" alt="descargar ficha tecnica"></a>
-			</div>
-			<div class="plano-planta">
-				<img src="img/tipo-d.jpg" alt="1 recamara tipo D">
-			</div>
-			<div class="planta-detalle-paginacion cf">
-				<div class="left">
-					<a href=""><img src="img/prev-tipo-btn.jpg" alt="<"></a>
-					<a href=""><img src="img/sig-tipo-btn.jpg" alt=">"></a>
-				</div>
-				<a href="#" class="cerrar-planta-container right"><img src="img/plantas-cerrar-detalle.jpg" alt="X"></a>
-			</div>
-		</div>
-		<!--tipo d-->
-		<!---UNA RECAMARA--->
-		
-		<!----DOS RECAMARAS----->
-		
-		<!--tipo c-->
-		<div class="tipo-planta-cont" style="display:none;">
-			<div class="planta-tipo-detalle">
-				<h2>TIPO C</h2>
-				<p>2 recámaras, sala, comedor, cocina, 1 baño completo, 1 centro de lavado y terraza.</p>
-	
-				<p>81 m2</p>
-				<a href=""><img src="img/descargar-ficha-btn.png" alt="descargar ficha tecnica"></a>
-			</div>
-			<div class="plano-planta">
-				<img src="img/tipo-c.jpg" alt="2 recamaras tipo C">
-			</div>
-			<div class="planta-detalle-paginacion cf">
-				<div class="left">
-					<a href=""><img src="img/prev-tipo-btn.jpg" alt="<"></a>
-					<a href=""><img src="img/sig-tipo-btn.jpg" alt=">"></a>
-				</div>
-				<a href="#" class="cerrar-planta-container right"><img src="img/plantas-cerrar-detalle.jpg" alt="X"></a>
-			</div>
-		</div>
-		<!--tipo c-->
-		
-		<!----DOS RECAMARAS----->
-		
-		<!----TRES RECAMARAS----->
-		
-		<!--tipo p-->
+		<!-- descripción del modelo -->
 		<div class="tipo-planta-cont">
 			<div class="planta-tipo-detalle">
-				<h2>TIPO P</h2>
-				<p>3 recámaras, 1 cuarto de servicio con baño, sala, comedor, cocina, sala tv, área de bar, 3 baños completos, 1 medio baño, 1 centro de lavado, 1 bodega y terraza.</p>
-	
-				<p>458 m2</p>
+				<h2>TIPO <% modelo.modelo %></h2>
+				<p><% modelo.descripcion %></p>
+
+				<p><% modelo.m2 %> m2</p>
 				<a href=""><img src="img/descargar-ficha-btn.png" alt="descargar ficha tecnica"></a>
 			</div>
 			<div class="plano-planta">
@@ -201,14 +80,12 @@ $(document).ready(function() {window.scrollReveal = new scrollReveal(); });
 				<a href="#" class="cerrar-planta-container right"><img src="img/plantas-cerrar-detalle.jpg" alt="X"></a>
 			</div>
 		</div>
-		<!--tipo p-->
-		
-		<!----TRES RECAMARAS----->
+	
 
 	</div>
 </div>
- <!--detalle palntas-->
- 
+<!--detalle palntas-->
+
  <!--PAGINA--->   
 <div id="fullpage">	
 	<!--inicio-->
@@ -286,7 +163,7 @@ $(document).ready(function() {window.scrollReveal = new scrollReveal(); });
 		<!--set 5-->
 		<footer class="center">
 			<p>Torre eme es un desarollo de Full Concept. Copyright Astronauta® 2014.</p>
-				<p><a href="">info@torreeme.mx</a></p>
+			<p><a href="">info@torreeme.mx</a></p>
 		</footer>
 	</div>
 	<!--inicio-->
@@ -304,7 +181,7 @@ $(document).ready(function() {window.scrollReveal = new scrollReveal(); });
 			</div>
 		</div>
 		<div class="map-cont">
-		<a href="#torreeme" data-menuanchor="torreeme" class="ver-ubicacion">VER UBICACI&Oacute;N</a>
+			<a href="#torreeme" data-menuanchor="torreeme" class="ver-ubicacion">VER UBICACI&Oacute;N</a>
 			<img src="img/mapa2.jpg" alt="" class="mapa">
 		</div>	
 	</div>
@@ -330,150 +207,148 @@ $(document).ready(function() {window.scrollReveal = new scrollReveal(); });
 		</div>
 		<div class="gray-bar center">
 			<p class="torre-eme-p center">Este proyecto ha sido diseñado para poseer una elevada perspectiva del mar,
-departamentos que ofrecen confort, gran estatus y una sofisticada elegancia frente al puerto. Su arquitectura también ofrece grandes espacios privados y comerciales, además de amenidades para hacer de un espacio habitacional, una experiencia de vida.</p> 
-		</div>
-		<div class="center white-bg">
-			<img src="img/arrow-dwn-white.png" alt="" class="inline"><p class="torre-ubicacion-p">La ubicación de torre EME está justo frente a la playa, cerca de los sitios turísticos más importantes de Mazatlán, como el Centro Histórico, Paseo Olas Altas, centros comerciales, restaurantes, la zona dorada, el estadio de beisbol, entre otros.</p><img src="img/arrow-dwn-white.png" alt="" class="inline">
-		</div>
-		<img src="img/torre_eme_ubicacion.jpg" alt="Ubicacion" class="ubicacion-img">
-	</div>
-	<!--Torre eMe-->
-	<!--Plantas-->
-	<div class="section bg" id="section3">
-		<div class="plantas-top center">
-			<h2>111 condominios, 111 perspectivas diferentes del Pacífico</h2>
-			<p>que demuestran la grandeza de un puerto de talla internacional.</p>
-		</div>
-		<div class="plantas-center">
-			<div class="plantas-center-inner cf">
-				<p>Escoje la configuración de tu departamento:</p>
-				<div class="center">
-					<a href="" class="recamara-num-btn">01<br>Recamaras</a>
-					<a href="" class="recamara-num-btn">02<br>Recamaras</a>
-					<a href="" class="recamara-num-btn">03<br>Recamaras</a>
-				</div>
-				<a href="" class="descargar-pres-btn"><img src="img/descargar-presentacion-btn.png" alt="descargar presentacion"></a>
+				departamentos que ofrecen confort, gran estatus y una sofisticada elegancia frente al puerto. Su arquitectura también ofrece grandes espacios privados y comerciales, además de amenidades para hacer de un espacio habitacional, una experiencia de vida.</p> 
 			</div>
-		</div>
-		<div class="plantas-bottom center">
-			<p>
-				11 condominios con acabados de lujo en interiores, distribuidos<br>
-				en 2 torres de 15 pisos, en los cuales se ubican tambi&eacute;n tres<br>
-				penthouses y cuatro junior penthouses.
-			</p>
-		</div>
-		<div class="inner-white cf">
-			<div class="pager-cont">	
-				<h2>PLANTAS GENERALES</h2>
-				<div class="bx-pager center">
-				  <a data-slide-index="0" href="">Estacionamiento</a>
-				  <a data-slide-index="1" href="">Area Comercial</a>
-				  <a data-slide-index="2" href="">Piso 01</a>
-				  <a data-slide-index="3" href="">Piso 03</a>
-				  <a data-slide-index="4" href="">Piso 04</a>
-				  <a data-slide-index="5" href="">Penthouse jr</a>
-				  <a data-slide-index="6" href="">Penthouse</a>
-				</div>
-				
-				<ul class="bxslider cf">
-					<li><img src="img/estacionamiento.jpg" alt=""></li>
-					<li><img src="img/area-comercial.jpg" alt=""></li>
-					<li><img src="img/piso-1.jpg" alt=""></li>
-					<li><img src="img/piso-3.jpg" alt=""></li>
-					<li><img src="img/piso-4.jpg" alt=""></li>
-					<li><img src="img/penthouse-jr.jpg" alt=""></li>
-					<li><img src="img/penthouse.jpg" alt=""></li>
-				</ul>
+			<div class="center white-bg">
+				<img src="img/arrow-dwn-white.png" alt="" class="inline"><p class="torre-ubicacion-p">La ubicación de torre EME está justo frente a la playa, cerca de los sitios turísticos más importantes de Mazatlán, como el Centro Histórico, Paseo Olas Altas, centros comerciales, restaurantes, la zona dorada, el estadio de beisbol, entre otros.</p><img src="img/arrow-dwn-white.png" alt="" class="inline">
 			</div>
+			<img src="img/torre_eme_ubicacion.jpg" alt="Ubicacion" class="ubicacion-img">
 		</div>
-	</div>
-	<!--Plantas-->
-	<!--Amenidades-->
-	<div class="section bg" id="section4">
-		<div class="amenidades-top">
-			<div class="amenidades-inner">
-				<img src="img/bar-blanca.jpg" alt="" class="white-bar">
-				<h2>AMENIDADES<br><small>Ubicadas en el piso 3</small></h2>
-				<p>El conjunto de amenidades en cuarto nivel cuenta con un área total de 409 m2, con tres espacios:</p>
-				<ul>
-				<li><strong>Baños con Sauna</strong></li> 
-				<li><strong>Terraza con Piscina</strong></li>
-				<li><strong>Gimnasio</strong></li> 
-				</ul>
-				<p>Cuentan además con un baño para hombres y uno para mujeres con sauna de 81 m2 y 3 duchas cada uno, una terraza con piscina de 260 m2 al aire libre, gimnasio de 69 m2; 4 bodegas y 2 asoleaderos.</p>
-				<img src="img/bar-blanca.jpg" alt="" class="white-bar">
+		<!--Torre eMe-->
+		<!--Plantas-->
+		<div class="section bg" id="section3">
+			<div class="plantas-top center">
+				<h2>111 condominios, 111 perspectivas diferentes del Pacífico</h2>
+				<p>que demuestran la grandeza de un puerto de talla internacional.</p>
 			</div>
-		</div>
-		<img src="img/amenidades-bottom.jpg" alt="amenidades" class="amenidades-bot">
-	</div>
-	<!--Amenidades-->
-	<!--Contacto-->
-	<div class="section bg" id="section5">
-		<div class="contacto-top">
-			<div class="contacto-inner">
-				<div class="hdr-cont">
-					<h2>CONTACTO</h2>
-				</div>	
-				<form class="contact-form cf">
-					<div class="input-cont left">
-						<label>NOMBRE:</label>
-						<input type="text">
-						<label>APELLIDOS:</label>
-						<input type="text">
-						<label>TEL&Eacute;FONO:</label>
-						<input type="text">
-						<label>CELULAR:</label>
-						<input type="text">
-						<label>E-MAIL:</label>
-						<input type="text">
+			<div class="plantas-center">
+				<div class="plantas-center-inner cf">
+					<p>Escoje la configuración de tu departamento:</p>
+					<div class="center">
+						<a href="" class="recamara-num-btn" ng-repeat="(key, value) in recamaras" ng-click="showInfo(value)"><% value.recamaras %><br>Recamaras</a>
 					</div>
-					<div class="input-cont right">
-						<label>CIUDAD:</label>
-						<input type="text">
-						<label>PAIS:</label>
-						<input type="text">
-						<label>COMENTARIO:</label>
-						<textarea></textarea>
-						<input type="submit" value="ENVIAR">
-					</div>					
-				</form>
-				<div class="full-concept">
-					<a href="#"><img src="img/full-concept-logo.png" alt=""></a>	
-					<span class="telefono">(669) 112 1290</span>	
+					<a href="" class="descargar-pres-btn"><img src="img/descargar-presentacion-btn.png" alt="descargar presentacion"></a>
 				</div>
-				<p class="center rights">Torre eMe es un proyecto de FULL CONCEPT<sup>&reg;</sup><br>
-				ventas@torreeme.mx / info@fullconcept.mx</p>			
 			</div>
-		</div>
-		<div class="ventas">
-			<div class="ventas-inner cf">
-				<div class="ventas-mod left">
-					<p><strong>VENTAS TORRE EME</strong><br>
-						Av. del Mar #602, Col. Ferrocarrilera<br> 
-						Mazatlán, Sinaloa, México.
-					</p>
-				</div>
-				
-				<div class="ventas-mod right">
-					<p><strong>VENTAS FULL CONCEPT</strong><br> 
-						Av. Camarón Sábalo 333 del Kiosco<br> 
-						Zona Dorada, C.P. 82110<br> 
-						Mazatlán, Sinaloa. México
-					</p>
-				</div>				
+			<div class="plantas-bottom center">
+				<p>
+					11 condominios con acabados de lujo en interiores, distribuidos<br>
+					en 2 torres de 15 pisos, en los cuales se ubican tambi&eacute;n tres<br>
+					penthouses y cuatro junior penthouses.
+				</p>
 			</div>
-		</div>
-	</div>
-	<!--Contacto-->
-	<!--360-->
-	<div class="section bg" id="section6">
-		<embed src="torre-eMe-360.swf" class="video-flash">
-		<div class="aqua-bar"></div>
-			
-		</div>
-	</div>
-	<!--360-->
-</div>
+			<div class="inner-white cf">
+				<div class="pager-cont">	
+					<h2>PLANTAS GENERALES</h2>
+					<div class="bx-pager center">
+						<a data-slide-index="0" href="">Estacionamiento</a>
+						<a data-slide-index="1" href="">Area Comercial</a>
+						<a data-slide-index="2" href="">Piso 01</a>
+						<a data-slide-index="3" href="">Piso 03</a>
+						<a data-slide-index="4" href="">Piso 04</a>
+						<a data-slide-index="5" href="">Penthouse jr</a>
+						<a data-slide-index="6" href="">Penthouse</a>
+					</div>
 
-</body>
-</html> 
+					<ul class="bxslider cf">
+						<li><img src="img/estacionamiento.jpg" alt=""></li>
+						<li><img src="img/area-comercial.jpg" alt=""></li>
+						<li><img src="img/piso-1.jpg" alt=""></li>
+						<li><img src="img/piso-3.jpg" alt=""></li>
+						<li><img src="img/piso-4.jpg" alt=""></li>
+						<li><img src="img/penthouse-jr.jpg" alt=""></li>
+						<li><img src="img/penthouse.jpg" alt=""></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--Plantas-->
+		<!--Amenidades-->
+		<div class="section bg" id="section4">
+			<div class="amenidades-top">
+				<div class="amenidades-inner">
+					<img src="img/bar-blanca.jpg" alt="" class="white-bar">
+					<h2>AMENIDADES<br><small>Ubicadas en el piso 3</small></h2>
+					<p>El conjunto de amenidades en cuarto nivel cuenta con un área total de 409 m2, con tres espacios:</p>
+					<ul>
+						<li><strong>Baños con Sauna</strong></li> 
+						<li><strong>Terraza con Piscina</strong></li>
+						<li><strong>Gimnasio</strong></li> 
+					</ul>
+					<p>Cuentan además con un baño para hombres y uno para mujeres con sauna de 81 m2 y 3 duchas cada uno, una terraza con piscina de 260 m2 al aire libre, gimnasio de 69 m2; 4 bodegas y 2 asoleaderos.</p>
+					<img src="img/bar-blanca.jpg" alt="" class="white-bar">
+				</div>
+			</div>
+			<img src="img/amenidades-bottom.jpg" alt="amenidades" class="amenidades-bot">
+		</div>
+		<!--Amenidades-->
+		<!--Contacto-->
+		<div class="section bg" id="section5">
+			<div class="contacto-top">
+				<div class="contacto-inner">
+					<div class="hdr-cont">
+						<h2>CONTACTO</h2>
+					</div>	
+					<form class="contact-form cf">
+						<div class="input-cont left">
+							<label>NOMBRE:</label>
+							<input type="text">
+							<label>APELLIDOS:</label>
+							<input type="text">
+							<label>TEL&Eacute;FONO:</label>
+							<input type="text">
+							<label>CELULAR:</label>
+							<input type="text">
+							<label>E-MAIL:</label>
+							<input type="text">
+						</div>
+						<div class="input-cont right">
+							<label>CIUDAD:</label>
+							<input type="text">
+							<label>PAIS:</label>
+							<input type="text">
+							<label>COMENTARIO:</label>
+							<textarea></textarea>
+							<input type="submit" value="ENVIAR">
+						</div>					
+					</form>
+					<div class="full-concept">
+						<a href="#"><img src="img/full-concept-logo.png" alt=""></a>	
+						<span class="telefono">(669) 112 1290</span>	
+					</div>
+					<p class="center rights">Torre eMe es un proyecto de FULL CONCEPT<sup>&reg;</sup><br>
+						ventas@torreeme.mx / info@fullconcept.mx</p>			
+					</div>
+				</div>
+				<div class="ventas">
+					<div class="ventas-inner cf">
+						<div class="ventas-mod left">
+							<p><strong>VENTAS TORRE EME</strong><br>
+								Av. del Mar #602, Col. Ferrocarrilera<br> 
+								Mazatlán, Sinaloa, México.
+							</p>
+						</div>
+
+						<div class="ventas-mod right">
+							<p><strong>VENTAS FULL CONCEPT</strong><br> 
+								Av. Camarón Sábalo 333 del Kiosco<br> 
+								Zona Dorada, C.P. 82110<br> 
+								Mazatlán, Sinaloa. México
+							</p>
+						</div>				
+					</div>
+				</div>
+			</div>
+			<!--Contacto-->
+			<!--360-->
+			<div class="section bg" id="section6">
+				<embed src="torre-eMe-360.swf" class="video-flash">
+					<div class="aqua-bar"></div>
+
+				</div>
+			</div>
+			<!--360-->
+		</div>
+
+	</body>
+	</html> 
