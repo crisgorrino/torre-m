@@ -288,26 +288,26 @@ $(document).ready(function() {window.scrollReveal = new scrollReveal(); });
 					<div class="hdr-cont">
 						<h2>CONTACTO</h2>
 					</div>	
-					<form class="contact-form cf">
+					<form class="contact-form cf" method="post" action="send_mail.php">
 						<div class="input-cont left">
 							<label>NOMBRE:</label>
-							<input type="text">
+							<input type="text" name="nombre">
 							<label>APELLIDOS:</label>
-							<input type="text">
+							<input type="text" name="apellidos">
 							<label>TEL&Eacute;FONO:</label>
-							<input type="text">
+							<input type="text" name="telefono">
 							<label>CELULAR:</label>
-							<input type="text">
+							<input type="text" name="celular">
 							<label>E-MAIL:</label>
-							<input type="text">
+							<input type="text" name="email">
 						</div>
 						<div class="input-cont right">
 							<label>CIUDAD:</label>
-							<input type="text">
+							<input type="text" name="ciudad">
 							<label>PAIS:</label>
-							<input type="text">
+							<input type="text" name="pais">
 							<label>COMENTARIO:</label>
-							<textarea></textarea>
+							<textarea name="comentario"></textarea>
 							<input type="submit" value="ENVIAR">
 						</div>					
 					</form>
