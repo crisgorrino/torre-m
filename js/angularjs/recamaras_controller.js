@@ -132,6 +132,8 @@ HomeApp.controller('RecamarasCtrl', function ($scope, $http) {
 	 	$('.plantas-info-container').css('height','100%').addClass('active'); 
 
 	 	$scope.tipos = recamara.tipos;
+
+	 	$scope.showModelInfo(recamara.tipos[0]);
   	};
 
   	$scope.showModelInfo = function(modelo){
