@@ -174,4 +174,43 @@ HomeApp.controller('RecamarasCtrl', function ($scope, $http) {
   		$scope.modelo = modelo;
   		console.log($scope.modelo);
   	};
+
+  	$scope.showNext = function(){
+  		
+  		var current_order = $scope.modelo.order;
+  		var next_order = current_order + 1;
+
+  		var show_next = false;
+  		var next_modelo = [];
+		angular.forEach($scope.tipos, function(value, key){
+			if(value.order == next_order){
+				show_next = true;
+				next_modelo = value;
+			}
+		}); 
+
+		if(show_next){
+			$scope.modelo = next_modelo;
+		}
+  		
+  	};
+
+  	$scope.showPrev = function(){
+		var current_order = $scope.modelo.order;
+  		var next_order = current_order - 1;
+
+
+  		var show_prev = false;
+  		var next_modelo = [];
+		angular.forEach($scope.tipos, function(value, key){
+			if(value.order == next_order){
+				show_prev = true;
+				next_modelo = value;
+			}
+		}); 
+
+		if(show_prev){
+			$scope.modelo = next_modelo;
+		}
+  	};
 });
