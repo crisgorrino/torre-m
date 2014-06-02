@@ -67,7 +67,7 @@ $(document).ready(function() {window.scrollReveal = new scrollReveal(); });
 				<p><% modelo.descripcion %></p>
 
 				<p><% modelo.m2 %> m2</p>
-				<a href=""><img src="img/descargar-ficha-btn.png" alt="descargar ficha tecnica"></a>
+				<a href="pdf/<% modelo.pdf %>" download><img src="img/descargar-ficha-btn.png" alt="descargar ficha tecnica"></a>
 			</div>
 			<div class="plano-planta">
 				<img src="img/<% modelo.img %>" alt="2 recamaras tipo P">
@@ -86,7 +86,7 @@ $(document).ready(function() {window.scrollReveal = new scrollReveal(); });
 </div>
 <!--detalle palntas-->
 
- <!--PAGINA--->   
+<!-- PAGINA -->   
 <div id="fullpage">	
 	<!--inicio-->
 	<div class="section bg" id="section0">
