@@ -66,7 +66,7 @@ $(document).ready(function() {window.scrollReveal = new scrollReveal(); });
 				<p><% modelo.descripcion %></p>
 
 				<p><% modelo.m2 %> m2</p>
-				<a href="pdf/<% modelo.pdf %>" download><img src="img/descargar-ficha-btn.png" alt="descargar ficha tecnica"></a>
+				<a href="pdf/<% modelo.pdf %>" download><img src="img/descargar-presentacion-btn.png" alt="descargar ficha tecnica"></a>
 			</div>
 			<div class="plano-planta">
 				<img src="img/<% modelo.img %>" alt="2 recamaras tipo P">
@@ -226,7 +226,7 @@ $(document).ready(function() {window.scrollReveal = new scrollReveal(); });
 					<div class="center">
 						<a href="" class="recamara-num-btn" ng-repeat="(key, value) in recamaras" ng-click="showInfo(value)"><% value.recamaras %><br>Recamaras</a>
 					</div>
-					<a href="" class="descargar-pres-btn"><img src="img/descargar-presentacion-btn.png" alt="descargar presentacion"></a>
+					<a href="" class="descargar-pres-btn"><span class="inline">Descargar PRESENTACIÓN</span> <img src="img/descargar-presentacion-btn.png" alt="descargar presentacion" class="inline"></a>
 				</div>
 			</div>
 			<div class="plantas-bottom center">
