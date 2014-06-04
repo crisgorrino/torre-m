@@ -139,6 +139,7 @@ footer a{text-decoration: none; color:#85cfce;}
 
 .plantas-bottom{width:100%; background-color:#2b303e; padding:1% 0;}
 .plantas-bottom p{color:#85cfce; text-transform: uppercase; font-size: .9em;font-family: 'Roboto Condensed', sans-serif; margin:0;}
+.desc-ficha-tec{display: inline-block;margin-top:4%; color:#2b303e; text-decoration: none; text-transform: uppercase; font-family: 'Roboto Condensed', sans-serif; font-weight:700; font-size:.6em;}
 
 /*--plantas info--*/
 .plantas-info-container{-moz-transition-duration: .55s;
