@@ -287,5 +287,11 @@ and (min-width : 1600px) {
 .torre-imgs .item img{display: block;width: 100%;height: auto;}
 
 .plantas-center-inner {width: 32%;}
+.amenidades-inner {width: 13%;padding: 3% 9%;}
+.contacto-inner {width: 32%;}
+.input-cont input[type="submit"] {margin: 8% 0;}
+.full-concept a {margin-left: 2%;}
+
+.ventas-inner {width: 22%;}
 
 }
