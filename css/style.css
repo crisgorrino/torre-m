@@ -252,7 +252,26 @@ z-index: 750;}
 /*--tablets--*/
 @media all
 and (min-width : 760px) and (max-width : 1024px) {
-	
+	/*esconder menu 360--*/
+	#ultima-pag{display: none;}
+	#section6{display: none;}
+	.menu li:nth-child(6) a{border:none;}
+	/*--estilos pagina--*/
+	.torre-eme {width: 75%;left: 27%;}
+	.text-overlay {width: 29%; left: 15%; top: 12%; font-size: 6.4em; letter-spacing: -7px;}
+	.overlay-txt-p {left: 19%;top: 22.5%;width: 17%;font-size: 0.7em;}
+	.overlay-txt-p2 {left: 21%;top: 34.5%;width: 15%;font-size: 0.7em;}
+	.maz-content {width: 45%;}
+	.owl-next{right:0; float: right;}
+	.owl-prev{left:0; float: left;}
+	.torre-eme-p {width: 66%;}
+	.torre-ubicacion-p {width: 66%;}
+	.recamara-num-btn {width: 29%;font-size: .8em;}
+	.plantas-info-container-inner {width: 65%;}
+	.bx-wrapper img {width: 80%;}
+	.amenidades-inner {width: 49%;}
+	.contacto-inner {width: 75%;}
+	.ventas-inner {width: 54%;}
 }
 
 
