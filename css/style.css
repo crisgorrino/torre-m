@@ -228,7 +228,7 @@ z-index: 750;}
 .full-concept{width: 68%; margin: 5% 30%; font-family: helvetica, arial ,sans-serif;}
 .full-concept a{display: inline-block; vertical-align: bottom; width:30%;}
 .full-concept a img{display: block; /*width:100%;*/}
-.telefono{color:#fff; font-size: 1.4em;}
+.telefono{color:#fff; font-size: 1.4em; text-decoration: none;}
 .rights{color:#fff; font-size: .7em; margin:0;  font-family: helvetica, arial ,sans-serif;}
 
 
@@ -272,6 +272,7 @@ and (min-width : 760px) and (max-width : 1024px) {
 	.amenidades-inner {width: 49%;}
 	.contacto-inner {width: 75%;}
 	.ventas-inner {width: 54%;}
+	.telefono a{color:#fff; font-size: .8em; text-decoration: none;}
 }
 
 
