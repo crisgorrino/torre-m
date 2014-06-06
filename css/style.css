@@ -117,7 +117,7 @@ footer a{text-decoration: none; color:#85cfce; font-family: helvetica, arial, sa
 
 .gray-bar{background-color:#2b303e; width:100%; padding:1% 0;}
 .torre-eme-p{width:40%; margin:0 auto; color:#85cfce; font-size: .8em;}
-.torre-ubicacion-p{width:40%; margin:0 auto; color:#2b303e; font-size: .8em; padding:1% 0; display: inline-block; vertical-align: middle;}
+.torre-ubicacion-p{width:40%; margin:0 auto; color:#2b303e; font-size: .8em; padding:1%; display: inline-block; vertical-align: middle;}
 
 .ubicacion-img{display: block; width:100%;}
 
