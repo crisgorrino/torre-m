@@ -34,7 +34,15 @@ $(document).ready(function() {
 			 $('.bxslider').bxSlider({
 				 pagerCustom: '.bx-pager'
 				 });
-			 
+ 
+			$(".torre-imgs").owlCarousel({
+					 items : 3,
+					 lazyLoad : true,
+					 navigation : true
+			}); 
+ 
+
+
 });
 
 

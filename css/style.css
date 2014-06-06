@@ -234,6 +234,18 @@ z-index: 750;}
 .aqua-bar{background-color:#85cfce; width:100%; padding:2% 0; margin-bottom:10%;}
 
 
+
+.owl-pagination{display:none;}
+.owl-buttons{position: absolute; top: 44%; width: 100%;}
+.owl-prev{position: relative; left: -15%; background-image: url(../img/prev-img.jpg); background-repeat: no-repeat;}
+.owl-next{position: relative; right:-15%; background-image: url(../img/next-img.jpg); background-repeat: no-repeat;}
+.torre-imgs .item{margin: 0 2px;}
+
+.torre-imgs .item img{display: block;width: 100%;height: auto;}
+
+
+
+
 /*---media queries---*/
 /*--mobile phones--*/
 @media all and  (min-width : 320px) and (max-width : 759px){
