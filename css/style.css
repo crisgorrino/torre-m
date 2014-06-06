@@ -64,9 +64,9 @@ html, body{font-family: 'Roboto Condensed', sans-serif; font-size:100%; height:1
 #section0{height:100%!important; margin-top:7%;}
 .torre-eme{display: block; width: 58%; position:relative; left:27%; top: 0%;}
 .text-overlay{display: block; width:26%; position:absolute; left: 15%; top: 12%; font-family: helvetica, Arial, sans-serif; font-weight:bolder; font-size: 7.9em; margin:0; line-height: .8em; color:#85cfce; letter-spacing: -9px;}
-.overlay-txt-p{position:absolute; left: 20%; top: 22.5%; width:12%; font-size: .8em; font-weight:300; color:#2b303e; font-family: helvetica, arial, sans-serif; font-weight: lighter;}
-.overlay-txt-p2{position:absolute; left: 21%; top: 34.5%;; width:12%; font-size: .8em; font-weight:300; color:#2b303e; font-family: helvetica, arial, sans-serif; font-weight: lighter;}
-footer{background-color:#2b313e; padding:1% 0 3% 0; font-family: helvetica, arial, sans-serif; font-weight: lighter;}
+.overlay-txt-p{position:absolute; left: 20%; top: 22.5%; width:12%; font-size: .8em; font-weight:300; color:#2b303e;font-family: 'Roboto Condensed', sans-serif; font-weight: 300;}
+.overlay-txt-p2{position:absolute; left: 21%; top: 34.5%;; width:12%; font-size: .8em; font-weight:300; color:#2b303e; font-family: 'Roboto Condensed', sans-serif; font-weight: 300;}
+footer{background-color:#2b313e; padding:1% 0 3% 0; font-family: helvetica, arial, sans-serif; font-weight: lighter; position: absolute; bottom:0; width:100%;}
 footer p{margin:0; color:#85cfce; font-size: .9em; font-family: helvetica, arial, sans-serif; font-weight: lighter;}
 footer a{text-decoration: none; color:#85cfce; font-family: helvetica, arial, sans-serif; font-weight: lighter;}
 
