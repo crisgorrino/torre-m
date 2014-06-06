@@ -18,13 +18,17 @@ $(document).ready(function() {
 			 $('.recamara-num-btn').click(function(e){
 			 	 e.preventDefault();
 				 $('.plantas-info-container').css('height','100%').addClass('active'); 
-			 })
+			 });
 			 
 			 //plantas detalle container close
 			 $('.cerrar-planta-container').click(function(e){
 			 	 e.preventDefault();
 				 $('.plantas-info-container').css('height','0').removeClass('active');
-			 })
+			 });
+			 
+			 $('.menu li a').click(function(){
+				 $('.plantas-info-container').css('height','0').removeClass('active');
+			 });
 			 
 			 
 			 $('.bxslider').bxSlider({
